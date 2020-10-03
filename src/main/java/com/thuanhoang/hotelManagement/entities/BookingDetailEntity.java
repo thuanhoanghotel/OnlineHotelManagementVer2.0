@@ -90,4 +90,29 @@ public class BookingDetailEntity {
     public void setTimeIn(Date timeIn) {
         this.timeIn = timeIn;
     }
+
+    public RoomEntity getRoomEntities() {
+        return roomEntities;
+    }
+
+    public void setRoomEntities(RoomEntity roomEntities) {
+        this.roomEntities = roomEntities;
+    }
+
+    public BookingEntity getBookingEntity() {
+        return bookingEntity;
+    }
+
+    public void setBookingEntity(BookingEntity bookingEntity) {
+        this.bookingEntity = bookingEntity;
+    }
+
+    public ServiceDetailEntity getServiceDetailEntity() {
+        return serviceDetailEntity;
+    }
+
+    public void setServiceDetailEntity(ServiceDetailEntity serviceDetailEntity) {
+        this.serviceDetailEntity = serviceDetailEntity;
+    }
+    
 }

@@ -85,41 +85,33 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form:form action="#" cssClass="check-form" method="get">
+                        <form:form action="admin" modelAttribute="search" class="check-form" method="get">
                             <h4>Check Availability</h4>
                             <div class="datepicker">
                                 <p>From</p>
-                                <form:input path="" type="text" class="datepicker-1" value="dd / mm / yyyy"></form:input>
+                                <form:input path="timeIn" type="text" class="datepicker-1" value="dd / mm / yyyy"></form:input>
                                 <img src="img/calendar.png" alt="">
                             </div>
                             <div class="datepicker">
                                 <p>To</p>
-                            <form:input path="" type="text" class="datepicker-2" value="dd / mm / yyyy"></form:input>
+                            <form:input path="timeOut" type="text" class="datepicker-2" value="dd / mm / yyyy"></form:input>
                                 <img src="img/calendar.png" alt="">
                             </div>
                             <div class="room-quantity">
                                 <div class="single-quantity">
                                     <p>Adults</p>
-                                    <div class="pro-qty"><form:input path="" type="text" value="0"></form:input></div>
+                                    <div class="pro-qty"><form:input path="numOfAdult" type="text" value="0"></form:input></div>
                                 </div>
                                 <div class="single-quantity">
                                     <p>Children</p>
-                                    <div class="pro-qty"><form:input path="" type="text" value="0"></form:input></div>
+                                    <div class="pro-qty"><form:input path="numOfChildren" type="text" value="0"></form:input></div>
                                 </div>
                                 <div class="single-quantity last">
                                     <p>Rooms</p>
-                                    <div class="pro-qty"><form:input path="" type="text" value="0"></form:input></div>
+                                    <div class="pro-qty"><form:input path="numOfRoom" type="text" value="0"></form:input></div>
                                 </div>
                             </div>
-                            <div class="room-selector">
-                                <p>Room</p>
-                                <form:select path="" class="suit-select">
-                                    <option>Eg. Master suite</option>
-                                    <option value="">Double Room</option>
-                                    <option value="">Single Room</option>
-                                    <option value="">Special Room</option>
-                                </form:select>
-                            </div>
+                           
                             <form:button type="submit">Go</form:button>
                         </form:form>
                     </div>

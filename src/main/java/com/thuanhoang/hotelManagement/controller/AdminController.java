@@ -22,7 +22,7 @@ public class AdminController {
     @GetMapping(value = "/trang_chu")
     public String addSearch(Model theModel){
         theModel.addAttribute("search", new Search());
-        return "booking";
+        return "index";
     }
     
 }
